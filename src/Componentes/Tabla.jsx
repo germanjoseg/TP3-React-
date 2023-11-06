@@ -20,11 +20,11 @@ function Tabla() {
                 <table className="table table-hover mt-2">
                     <thead className="border-bottom border-primary">
                         <tr>
-                            <th>Fecha de cotización</th>
-                            <th>Propiedad</th>
-                            <th>Ubicación</th>
-                            <th>Metros cuadrados</th>
-                            <th>Póliza mensual</th>
+                            <th>FECHA DE COTIZACIÓN</th>
+                            <th>PROPIEDAD</th>
+                            <th>UBICACIÓN</th>
+                            <th>METROS CUADRADOS</th>
+                            <th>PÓLIZA MENSUAL</th>
                         </tr>
                     </thead>
                     <tbody>

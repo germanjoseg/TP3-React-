@@ -13,7 +13,7 @@ function InputMetros(){
 
     return (
         <>
-            <br /><br /><label htmlFor="metros2">Ingresa los metros2:</label>
+            <br /><br /><label htmlFor="metros2">INGRESA LOS METROS CUADRADOS:</label>
             <input onChange={handleChange} className="input-text " type="number" id="metros2" min="20" max="500" required/>
         </>
     )

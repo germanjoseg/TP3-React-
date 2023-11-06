@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css");
 @import url("https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;800&display=swap');
 
 #root {
   max-width: 1280px;
@@ -10,18 +11,21 @@
 }
 
 * {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
 }
 
 html {
   min-height: 100%;
-  background-color: rgb(195, 155, 233) !important;
+  background: #33CCCC; /* Fallback */
+  animation: color 9s infinite linear;
+  text-align: center;
 }
 main {
   text-align: center;
   vertical-align: center;
   line-height: 100vh;
-  background-color: rgb(195, 155, 233);
+  background-color:rgb(250, 119, 119);
 }
 
 .center {
@@ -29,36 +33,31 @@ main {
 }
 
 h1 {
-  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:bold;
   color: whitesmoke;
-  font-size: 4rem;
+  font-size: 70px;
 }
 
-#form h1 {
-  font-weight: 400;
-  font-size: 4rem;
-  color: black;
-  text-decoration: underline;
-}
 h2 {
-  font-weight: 300;
-  color: black;
-  font-size: larger;
-  text-decoration: underline;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: gray;
 }
 
 label {
-  font-weight: 400;
-  color: black;
-  /*background-color: antiquewhite;*/
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: gray;
+  font-size: 20px;
 }
 
 div.form {
   margin: auto;
+  justify-content: center;
   max-width: 900px;
-  background-color: whitesmoke !important;
-  margin-left: 12%;
-  margin-right: 5%;
+  background-color: whitesmoke;
   padding: 10px;
   border-color: whitesmoke;
   box-shadow: 30px 30px 18px -9px rgba(110, 5, 5, 0.15);
@@ -76,32 +75,32 @@ input {
 #propiedad.input-text {
   background-color: aliceblue;
   border: solid 2px;
-  border-color: rgb(187, 119, 250);
+  border-color: rgb(250, 119, 119);
   border-radius: 10px;
 }
 
 .input-text {
   background-color: aliceblue;
   border: solid 2px;
-  border-color: rgb(187, 119, 250);
+  border-color: rgb(250, 119, 119);
   border-radius: 10px;
 }
 
 #metros2.input-text {
   background-color: aliceblue;
   border: solid 2px;
-  border-color: rgb(187, 119, 250);
+  border-color: rgb(250, 119, 119);
   border-radius: 10px;
 }
 
 th {
-  color: black;
+  color: gray;
   font-weight: 300;
   font-size: 1.2rem;
 }
 
 table {
-  color: aliceblue !important;
+  color: aliceblue;
   border: solid 1px;
   padding-left: 2%;
   padding-right: 2%;
@@ -112,27 +111,28 @@ table {
 }
 
 button {
-  background-color: white !important;
-  color: black !important;
+  background-color: white;
+  color: gray;
   border-radius: 10px;
   box-shadow: 10px 8px 8px -2px rgba(110, 5, 5, 0.15);
 }
 button:hover {
-  color: white !important;
-  background-color: blueviolet !important;
+  color: white;
+  background-color: green;
   transform: scale(1.1);
   transition: all 0.2s ease-in-out;
 }
 
 button:active {
-  background-color: black !important;
+  background-color: black;
   transition: all 0.2s ease-in-out;
   transform: scale(1.1);
 }
 
 #valorPoliza {
-  color: rgb(212, 27, 27) !important;
-  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(212, 27, 27);
+  font-weight: bold;
 }
 
 .btn #historial {
@@ -141,27 +141,39 @@ button:active {
 }
 
 .btn :hover #historial {
-  color: white !important;
-  background-color: blueviolet !important;
+  color: white;
+  background-color: rgb(250, 119, 119);
   transform: scale(1.1);
   transition: all 0.2s ease-in-out;
 }
 
 .btn :active #historial {
-  background-color: black !important;
+  background-color: black;
   transition: all 0.1s ease-in-out;
   transform: scale(1.1);
 }
 
 .table {
-  background-color: rgb(205, 187, 222);
+  background-color: whitesmoke;
   box-shadow: 25px 25px 18px -9px rgba(101, 2, 2, 0.15);
 }
 
 td {
   color: black;
+  
 }
 
 th {
   width: 200;
 }
+
+@keyframes color {
+  0%   { background: #33CCCC; }
+  20%  { background: #33CC36; }
+  40%  { background: #B8CC33; }
+  60%  { background: #FCCA00; }
+  80%  { background: #33CC36; }
+  100% { background: #33CCCC; }
+}
+
+

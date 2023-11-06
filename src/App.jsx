@@ -1,6 +1,6 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Portada from './Portada'
+import Inicio from './Inicio'
 import Historial from './Historial'
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/' Component={Portada} />
+          <Route path='/' Component={Inicio} />
           <Route path='/historial' Component={Historial} />
         </Routes>
       </BrowserRouter>
